@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Builder</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts for Styling -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+</head>
+<body>
+  <div class="container">
+    <h1>Resume Builder</h1>
+    <form id="resume-form">
+      <label for="username">Username</label>
+      <input type="text" id="username" placeholder="Enter your username">
+
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name">
+
+      <label for="contact">Contact</label>
+      <input type="text" id="contact" placeholder="Enter your contact">
+
+      <label for="location">Location</label>
+      <input type="text" id="location" placeholder="Enter your location">
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email">
+
+      <label for="objective">Objective</label>
+      <textarea id="objective" placeholder="Your career objective"></textarea>
+
+      <label for="skills">Skills</label>
+      <textarea id="skills" placeholder="Enter your skills"></textarea>
+
+      <label for="education">Education</label>
+      <textarea id="education" placeholder="Your education details"></textarea>
+
+      <label for="awards">Awards</label>
+      <textarea id="awards" placeholder="Your awards"></textarea>
+
+      <label for="languages">Languages</label>
+      <textarea id="languages" placeholder="Languages you speak"></textarea>
+
+      <button type="button" id="generate-pdf">Generate PDF</button>
+    </form>
+    <div id="share-link">
+      <p>Shareable Link: <span id="shareable-url"></span></p>
+    </div>
+  </div>
+
+  <!-- Include jsPDF from CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.4.0/jspdf.umd.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
