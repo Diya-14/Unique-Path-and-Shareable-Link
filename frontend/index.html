@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Resume Builder</h1>
+    </header>
+    <main>
+        <form id="resume-form">
+            <input type="text" id="username" placeholder="Username" required>
+            <input type="text" id="name" placeholder="Full Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="text" id="location" placeholder="Location" required>
+            <input type="text" id="contact" placeholder="Contact Number" required>
+            <textarea id="objective" placeholder="Objective" required></textarea>
+            <textarea id="education" placeholder="Education (e.g., Degree, Institution, Year)" required></textarea>
+            <textarea id="experience" placeholder="Experience (e.g., Company, Role, Duration)" required></textarea>
+            <textarea id="skills" placeholder="Skills (e.g., Programming, Communication)" required></textarea>
+            <textarea id="awards" placeholder="Awards" required></textarea>
+            <textarea id="activities" placeholder="Extra-Curricular Activities" required></textarea>
+            <button type="button" id="generate-btn">Generate Resume</button>
+        </form>
+        <div id="resume-output" class="hidden">
+            <div id="resume"></div>
+            <button id="download-btn">Download as PDF</button>
+            <button id="share-btn">Share</button>
+            <p id="share-link"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
